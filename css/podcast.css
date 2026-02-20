@@ -1,0 +1,81 @@
+/* ---- PODCAST SECTION ---- */
+#podcast-section {
+  background-color: #7b00bd; /* matches your site */
+  color: #fff;
+  text-align: center;
+  padding: 60px 20px;
+}
+#podcast-section h2 {
+  font-size: 60px;
+  margin-bottom: 30px;
+}
+
+/* ---- CAROUSEL STRIP ---- */
+.podcast-carousel {
+  display: flex;
+  gap: 32px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  padding: 10px 80px;        /* room for arrows */
+  scrollbar-width: none;     /* Firefox */
+}
+.podcast-carousel::-webkit-scrollbar { display: none; }
+
+/* ---- CARD ---- */
+.podcast-card {
+  scroll-snap-align: center;
+  background: #260042;        /* your dark purple card */
+  color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+  min-width: 360px;           /* ~3 cards on desktop */
+  max-width: 420px;
+  padding: 20px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+.podcast-card:hover {
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 0 35px rgba(200,100,255,0.6);
+}
+.podcast-title {
+  font-size: 24px;
+  margin-top: 14px;
+}
+
+/* Make iframe responsive inside card */
+.podcast-embed {
+  width: 100%;
+  height: 232px;              /* good height for episodes */
+  border: 0;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+/* ---- ARROWS ---- */
+.podcast-arrow {
+  position: relative;
+  margin: 15px 8px 0;
+  background: #0f0f0f;
+  color: #fff;
+  border: 1px solid #b366ff;
+  border-radius: 12px;
+  padding: 10px 16px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: all 0.2s ease;
+}
+.podcast-arrow:hover {
+  color: #fff;
+  background: #431078;
+  transform: translateY(-1px);
+  box-shadow: 0 0 18px rgba(179,102,255,0.45);
+}
+.podcast-arrow:active { transform: translateY(0); }
+
+/* ---- RESPONSIVE ---- */
+@media (max-width: 900px) {
+  .podcast-card { min-width: 86vw; }
+}
