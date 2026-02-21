@@ -87,18 +87,45 @@ nav.site-nav a:hover::after { width: 100%; }
 .nav-toggle:focus { outline: 2px solid #b366ff; outline-offset: 2px; }
 .nav-toggle .bar { display: block; width: 24px; height: 2px; margin: 5px 0; background: white; transition: transform .3s ease, opacity .3s ease; }
 
+/* === Mobile (scaled original nav, no hamburger) === */
 @media (max-width: 780px) {
-  nav.site-nav { justify-content: space-between; position: relative; }
-  nav.site-nav .brand { display: inline-block; }
-  nav.site-nav .menu {
-    display: none;
-    flex-direction: column; align-items: stretch; gap: 12px;
-    position: absolute; left: 0; right: 0; top: 100%;
-    background: black; padding: 12px 16px; border-top: 1px solid #222;
+  /* Keep the bar centered like your original */
+  nav.site-nav {
+    justify-content: center;
+    position: relative;
   }
-  nav.site-nav.open .menu { display: flex; }
-  .nav-toggle { display: inline-block; }
-  nav.site-nav a::after { bottom: -4px; height: 2px; }
+
+  /* Hide the brand label if you don’t want it on mobile (optional) */
+  nav.site-nav .brand { display: none; }
+
+  /* Show links as a regular row that wraps to multiple lines */
+  nav.site-nav .menu {
+    display: flex;                /* always visible */
+    position: static;             /* no absolute dropdown */
+    flex-direction: row;
+    flex-wrap: wrap;              /* allow wrapping to the next line */
+    align-items: center;
+    justify-content: center;
+    gap: 10px 16px;               /* tighter spacing on mobile */
+    padding: 0;
+    background: transparent;
+    border: 0;
+  }
+
+  /* Scale link text down but keep it readable */
+  nav.site-nav a {
+    font-size: clamp(14px, 4.5vw, 18px);
+    margin: 0;
+  }
+
+  /* Hide the hamburger button entirely on mobile */
+  .nav-toggle { display: none !important; }
+
+  /* Keep your underline effect, just thinner and closer */
+  nav.site-nav a::after {
+    bottom: -4px;
+    height: 2px;
+  }
 }
 
 /* =========================
@@ -113,7 +140,7 @@ nav.site-nav a:hover::after { width: 100%; }
 #title::before {
   content: "";
   position: absolute; inset: 0;
-  background-image: url("../images/Youtube banner.png");
+  background-image: url("../images/Banner.png");
   background-size: cover; background-position: center;
   filter: blur(4px);
   transform: scale(1.1);

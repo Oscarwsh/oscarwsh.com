@@ -1,37 +1,37 @@
 /* ---- PODCAST SECTION ---- */
 #podcast-section {
-  background-color: #7b00bd; /* matches your site */
+  background-color: #7b00bd;
   color: #fff;
   text-align: center;
-  padding: 60px 20px;
+  padding: clamp(24px,6vw,64px) clamp(16px,4vw,32px);
 }
 #podcast-section h2 {
-  font-size: 60px;
+  font-size: clamp(22px,6vw,44px);
   margin-bottom: 30px;
 }
 
 /* ---- CAROUSEL STRIP ---- */
 .podcast-carousel {
   display: flex;
-  gap: 32px;
+  gap: clamp(16px,4vw,32px);
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
-  padding: 10px 80px;        /* room for arrows */
-  scrollbar-width: none;     /* Firefox */
+  padding: clamp(6px,1.5vw,12px) clamp(24px,6vw,80px); /* room for arrows */
+  scrollbar-width: none; /* Firefox */
 }
 .podcast-carousel::-webkit-scrollbar { display: none; }
 
 /* ---- CARD ---- */
 .podcast-card {
   scroll-snap-align: center;
-  background: #260042;        /* your dark purple card */
+  background: #260042;
   color: #fff;
   border-radius: 20px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.35);
-  min-width: 360px;           /* ~3 cards on desktop */
-  max-width: 420px;
-  padding: 20px;
+  min-width: clamp(260px, 70vw, 380px);
+  max-width: min(92vw, 420px);
+  padding: clamp(14px,3.5vw,20px);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
   transform-style: preserve-3d;
   perspective: 1000px;
@@ -41,14 +41,13 @@
   box-shadow: 0 0 35px rgba(200,100,255,0.6);
 }
 .podcast-title {
-  font-size: 24px;
+  font-size: clamp(16px,4.5vw,22px);
   margin-top: 14px;
 }
-
 /* Make iframe responsive inside card */
 .podcast-embed {
   width: 100%;
-  height: 232px;              /* good height for episodes */
+  height: clamp(190px, 38vw, 232px);
   border: 0;
   border-radius: 14px;
   overflow: hidden;
@@ -62,9 +61,9 @@
   color: #fff;
   border: 1px solid #b366ff;
   border-radius: 12px;
-  padding: 10px 16px;
+  padding: clamp(8px,2.4vw,12px) clamp(10px,3.2vw,16px);
   cursor: pointer;
-  font-size: 18px;
+  font-size: clamp(14px, 3.5vw, 18px);
   transition: all 0.2s ease;
 }
 .podcast-arrow:hover {
