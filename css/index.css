@@ -128,6 +128,98 @@ nav.site-nav a:hover::after { width: 100%; }
   }
 }
 
+/* Base menu link styling (adjust to your design) */
+.site-nav .menu > a,
+.site-nav .menu > .dropdown > a {
+  display: inline-block;          /* or block if your layout needs */
+  padding: 0.5rem 0.75rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Dropdown container does not affect layout */
+.site-nav .dropdown {
+  position: relative;             /* anchor for absolute submenu */
+}
+
+/* Submenu dropdown */
+.site-nav .dropdown-content {
+  position: absolute;
+  top: calc(100% + 4px);        /* slightly lower */
+  left: 0;
+  display: none;
+  background-color: #000000;
+  min-width: 200px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  z-index: 1000;
+  padding: 0.5rem;    
+  border-radius: 10px;
+  border: 1px solid white; 
+  transform: translateX(-30%); /* keep your horizontal alignment */
+}
+
+/* Create an invisible hover bridge under the trigger so the pointer can travel down */
+.site-nav .dropdown::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  height: 10px; /* extend hover zone to cover the gap */
+}
+
+/* Then show menu via hover/focus-within */
+.site-nav .dropdown:hover .dropdown-content,
+.site-nav .dropdown:focus-within .dropdown-content {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateX(-30%) translateY(0);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+/* Show on hover (desktop) */
+.site-nav .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Also show when keyboard focusing inside */
+.site-nav .dropdown:focus-within .dropdown-content {
+  display: block;
+}
+
+/* Submenu items look nice & full-width */
+.site-nav .dropdown-content a {
+  display: block;
+  padding: 0.5rem 0.75rem;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  white-space: nowrap;            /* prevent text wrap; remove if you prefer wrap */
+}
+
+.site-nav .dropdown-content a:hover,
+.site-nav .dropdown-content a:focus {
+  background: rgba(255,255,255,0.15);
+  outline: none;
+}
+
+/* Optional: prevent the nav from jumping due to line-height changes */
+.site-nav .menu {
+  line-height: 1;                 /* keep consistent nav height */
+}
+
+/* Optional: if your menu is horizontal, prevent overflow issues */
+.site-nav .menu {
+  position: relative;             /* ensure submenu z-index stacks above */
+}
+
+/* Mobile-friendly enhancement: avoid accidental gaps that close hover */
+.site-nav .dropdown-content {
+  margin-top: 6px;                /* small gap with hover-friendly spacing */
+}
+
+
 /* =========================
    HERO TITLE
 ========================= */
@@ -224,3 +316,11 @@ hr.divider {
 .embed-spotify { max-width: 900px; margin: 0 auto; padding: 0 16px; }
 .embed-spotify iframe { width: 100%; height: 232px; border: 0; border-radius: 12px; }
 @media (max-width: 480px) { .embed-spotify iframe { height: 190px; } }
+
+#icon img{
+  width: 7%;
+}
+
+#boya-icon img{
+  width: 15%;
+}

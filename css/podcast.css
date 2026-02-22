@@ -1,3 +1,50 @@
+/* Container */
+#podcast-platforms {
+  display: flex;
+  flex-wrap: wrap;             /* allows wrapping on small screens */
+  align-items: center;
+  justify-content: center;
+  gap: clamp(16px, 5vw, 32px);
+}
+
+/* Images inside the platforms area */
+.podcast-platforms img {
+  width: clamp(120px, 25vw, 180px);
+  height: auto;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: block;              /* removes descender gaps */
+}
+
+/* Hover & keyboard focus for accessibility */
+.podcast-platforms a:hover img,
+.podcast-platforms a:focus-visible img {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 0 20px rgba(200, 100, 255, 0.5);
+  outline: none;
+}
+
+/* Provide a visible outline for keyboard users */
+.podcast-platforms a:focus-visible {
+  outline: 3px solid rgba(200, 100, 255, 0.6);
+  outline-offset: 6px;
+  border-radius: 14px; /* align with img rounding */
+}
+
+/* Respect reduced-motion user preference */
+@media (prefers-reduced-motion: reduce) {
+  .podcast-platforms img {
+    transition: none;
+  }
+  .podcast-platforms a:hover img,
+  .podcast-platforms a:focus-visible img {
+    transform: none;
+    box-shadow: none;
+  }
+}
+
+
+
 /* ---- PODCAST SECTION ---- */
 #podcast-section {
   background-color: #7b00bd;

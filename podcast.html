@@ -26,6 +26,7 @@
       <a href="index.html">Home</a>
       <a href="about.html">About Me</a>
       <a href="cubing.html">Cubing</a>
+      <a href="youtube.html">YouTube</a>
       <a href="podcast.html" aria-current="page">Podcast</a>
     </div>
   </nav>
@@ -49,13 +50,38 @@
 
   <hr class="divider" />
 
-  <section id="Basic">
-    <h4><b><u>Where to Listen</u></b></h4>
-    <p>You can listen to the +2 Podcast on Spotify, Apple Podcasts, or your favorite podcast platform!
-      Just search for "+2 Podcast" or "Oscarwsh".</p>
-  </section>
+<section id="Basic" aria-labelledby="listen-heading">
+  <h4 id="listen-heading"><u><b>Where to Listen?</b></u></h4>
+  <p>
+    You can find it on Spotify, Apple Podcasts, and YouTube!
+  </p>
 
-  <hr class="divider" />
+  <!-- Container expected by your CSS -->
+  <div id="podcast-platforms" class="podcast-platforms" role="list">
+    <a href="https://open.spotify.com/show/1R1fgF8S2SaYGap3GMRdHj"
+       target="_blank" rel="noopener noreferrer"
+       aria-label="Listen on Spotify" role="listitem">
+      <img src="images/Spotify.png" alt="Listen on Spotify"
+           loading="lazy" decoding="async" width="180" height="180">
+    </a>
+
+    <a href="https://podcasts.apple.com/us/podcast/2-podcast/id1869081312"
+       target="_blank" rel="noopener noreferrer"
+       aria-label="Listen on Apple Podcasts" role="listitem">
+      <img src="images/ApplePod.png" alt="Listen on Apple Podcasts"
+           loading="lazy" decoding="async" width="180" height="180">
+    </a>
+
+    <a href="https://www.youtube.com/playlist?list=PLWYp88PYsmR2qCkyBNxuZjHcmN7UT8Nzu"
+       target="_blank" rel="noopener noreferrer"
+       aria-label="Watch on YouTube" role="listitem">
+      <img src="images/Youtube.png" alt="Watch on YouTube"
+           loading="lazy" decoding="async" width="180" height="180">
+    </a>
+  </div>
+</section>
+
+<hr class="divider" />
 
   <section id="Basic">
     <h4><b><u>Latest Release</u></b></h4>
@@ -92,17 +118,17 @@
     <div class="footer-column">
       <h4>Socials</h4>
       <a href="https://youtube.com/@oscarwsh?sub_confrimation=1" target="_blank">
-        <span class="icon">▶️</span> YouTube
+        <span id="icon"><img src="images/Youtube-Icon.png" alt="YouTube"></span> YouTube
       </a>
       <a href="https://open.spotify.com/show/1R1fgF8S2SaYGap3GMRdHj" target="_blank">
-        <span class="icon">🎙️</span> Podcast
+        <span id="icon"><img src="images/Spotify-Icon.png" alt="Spotify Podcast"></span> Podcast
       </a>
     </div>
 
     <div class="footer-column">
       <h4>Support</h4>
       <a href="https://boya.pxf.io/oscarwsh" target="_blank">
-        <span class="icon">💜</span> Boya Affiliate
+        <span id="boya-icon"><img src="images/Boya-Icon.png" alt="Boya Affiliate"></span> Affiliate
       </a>
     </div>
   </footer>
