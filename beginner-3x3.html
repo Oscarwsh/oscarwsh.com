@@ -1,86 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <title>Oscarwsh | Home</title>
+    <meta charset="UTF-8" />
+    <title>Oscarwsh | Beginner's Method</title>
 
-  <!-- Base CSS first -->
-  <link rel="stylesheet" href="css/index.css" />
+    <!-- Base CSS first -->
+    <link rel="stylesheet" href="css/index.css" />
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/x-icon" href="images/Oscarwsh-Icon.png" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/Oscarwsh-Icon.png" />
 
-  <!-- SEO meta -->
-  <meta name="description" content="Welcome to Oscarwsh, the home of speedcubing! Find tutorials, videos, personal records, and more about speedcubing." />
-  <meta name="keywords" content="Oscarwsh, Cubing, Rubik's Cube, Speedcubing, Tutorials, Videos, Personal Records, Competitions, Podcast" />
-  <meta name="author" content="Oscarwsh | Oscar Cederberg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- SEO meta -->
+    <meta name="description"
+        content="Welcome to Oscarwsh, the home of speedcubing! Find tutorials, videos, personal records, and more about speedcubing." />
+    <meta name="keywords"
+        content="Oscarwsh, Cubing, Rubik's Cube, Speedcubing, Tutorials, Videos, Personal Records, Competitions, Podcast" />
+    <meta name="author" content="Oscarwsh | Oscar Cederberg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
+
 <body>
 
-  <!-- Responsive / Accessible Nav -->
-  <nav class="site-nav" aria-label="Primary">
-    <a class="brand" href="index.html">Oscarwsh</a>
-    <button class="nav-toggle" aria-expanded="false" aria-controls="primary-menu" aria-label="Toggle menu">
-      <span class="bar"></span><span class="bar"></span><span class="bar"></span>
-    </button>
-    <div id="primary-menu" class="menu">
-      <a href="index.html" aria-current="page">Home</a>
-      <a href="about.html">About Me</a>
-      <a href="cubing.html">Cubing</a>
-      <a href="youtube.html">YouTube</a>
-      <a href="podcast.html">Podcast</a>
+    <!-- Responsive / Accessible Nav -->
+    <nav class="site-nav" aria-label="Primary">
+        <div class="brand-container">
+            <a class="brand" href="index.html"><img src="images/Oscarwsh-Icon.png" alt="Oscarwsh Icon">Oscarwsh</a>
+        </div>
+        <div class="links">
+            <div id="primary-menu" class="menu">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Me</a>
+                <div class="dropdown"><a href="cubing.html" aria-current="page" id="current-page">Cubing</a>
+                    <div class="dropdown-content">
+                        <div class="dropdown-3x3"><a href="3x3.html" id="current-page">3x3 Cube</a>
+                            <div class="dropdown-3x3-content">
+                                <a href="beginner-3x3.html" id="current-page">Beginner's Method</a>
+                                <div class="cfop-dropdown"><a href="cfop.html">CFOP Method</a>
+                                    <div class="cfop-dropdown-content">
+                                        <a href="2look-oll.html">2Look OLL</a>
+                                        <a href="2look-pll.html">2Look PLL</a>
+                                        <a href="cfop-oll.html">CFOP OLL</a>
+                                        <a href="cfop-pll.html">CFOP PLL</a>
+                                        <a href="cfop-f2l.html">CFOP F2L</a>
+                                        <a href="cross.html">Advanced Cross</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="4x4.html">4x4 Cube</a>
+                    </div>
+                </div>
+                <a href="youtube.html">YouTube</a>
+                <a href="podcast.html">Podcast</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Hero -->
+    <header id="title">
+        <h1>Beginners Method</h1>
+    </header>
+
+    <hr class="divider" />
+
+    <!-- Intro -->
+    <section id="Basic">
+        <h4><u>How to Solve a Rubik's Cube for Beginners</u></h4>
+        <p>You might think that solving a Rubik's Cube is a complex task, but it's actually quite simple once you learn
+            the basic steps. This guide will walk you through each stage of solving a 3x3 Rubik's Cube, from the first
+            layer to the final pieces.</p>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- Footer -->
+    <footer class="site-footer" role="contentinfo">
+        <div class="footer-column">
+            <h4>About</h4>
+            <a href="index.html"><span class="icon">🏠</span> Home</a>
+            <a href="about.html"><span class="icon">👤</span> About Me</a>
+        </div>
+
+        <div class="footer-column">
+            <h4>Socials</h4>
+            <a href="https://youtube.com/@oscarwsh?sub_confrimation=1" target="_blank">
+                <span id="icon"><img src="images/Youtube-Icon.png" alt="YouTube"></span> YouTube
+            </a>
+            <a href="https://open.spotify.com/show/1R1fgF8S2SaYGap3GMRdHj" target="_blank">
+                <span id="icon"><img src="images/Spotify-Icon.png" alt="Spotify Podcast"></span> Podcast
+            </a>
+        </div>
+
+        <div class="footer-column">
+            <h4>Support</h4>
+            <a href="https://boya.pxf.io/oscarwsh" target="_blank">
+                <span id="boya-icon"><img src="images/Boya-Icon.png" alt="Boya Affiliate"></span> Affiliate
+            </a>
+        </div>
+    </footer>
+
+    <div class="footer-bottom">
+        © 2026 Oscarwsh™. All rights reserved. Oscarwsh™ and +2 Podcast™ are trademarks of Oscarwsh™.
+        This website is not affiliated with the World Cube Association or any other organization.
+        All content is created by Oscarwsh™.
     </div>
-  </nav>
 
-  <!-- Hero -->
-  <header id="title">
-    <h1>Beginners Method</h1>
-  </header>
-
-  <hr class="divider" />
-
-  <!-- Intro -->
-  <section id="Basic">
-    <h4><u>How to Solve a Rubik's Cube for Beginners</u></h4>
-    <p>You might think that solving a Rubik's Cube is a complex task, but it's actually quite simple once you learn the basic steps. This guide will walk you through each stage of solving a 3x3 Rubik's Cube, from the first layer to the final pieces.</p>
-  </section>
-
-  <hr class="divider" />
-
-  <!-- Footer -->
-  <footer class="site-footer" role="contentinfo">
-    <div class="footer-column">
-      <h4>About</h4>
-      <a href="index.html"><span class="icon">🏠</span> Home</a>
-      <a href="about.html"><span class="icon">👤</span> About Me</a>
-    </div>
-
-    <div class="footer-column">
-      <h4>Socials</h4>
-      <a href="https://youtube.com/@oscarwsh?sub_confrimation=1" target="_blank">
-        <span id="icon"><img src="images/Youtube-Icon.png" alt="YouTube"></span> YouTube
-      </a>
-      <a href="https://open.spotify.com/show/1R1fgF8S2SaYGap3GMRdHj" target="_blank">
-        <span id="icon"><img src="images/Spotify-Icon.png" alt="Spotify Podcast"></span> Podcast
-      </a>
-    </div>
-
-    <div class="footer-column">
-      <h4>Support</h4>
-      <a href="https://boya.pxf.io/oscarwsh" target="_blank">
-        <span id="boya-icon"><img src="images/Boya-Icon.png" alt="Boya Affiliate"></span> Affiliate
-      </a>
-    </div>
-  </footer>
-
-  <div class="footer-bottom">
-    © 2026 Oscarwsh™. All rights reserved. Oscarwsh™ and +2 Podcast™ are trademarks of Oscarwsh™.
-    This website is not affiliated with the World Cube Association or any other organization.
-    All content is created by Oscarwsh™.
-  </div>
-
-  <!-- Hamburger toggler -->
-<script src="nav.js" defer></script>
+    <!-- Hamburger toggler -->
+    <script src="nav.js" defer></script>
 </body>
+
 </html>

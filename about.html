@@ -1,255 +1,348 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <title>Oscarwsh | About Me</title>
+    <meta charset="UTF-8" />
+    <title>Oscarwsh | About Me</title>
 
-  <!-- Base first, then page-specific -->
-  <link rel="stylesheet" href="css/index.css" />
-  <link rel="stylesheet" href="css/about.css" />
+    <!-- Base first, then page-specific -->
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/about.css" />
 
-  <link rel="icon" type="image/x-icon" href="images/Oscarwsh-Icon.png" />
-  <meta name="description" content="Learn more about Oscarwsh, a Swedish/Canadian speedcuber. Find out about his personal records, journey, and more!" />
-  <meta name="keywords" content="Oscarwsh, Cubing, Rubik's Cube, Speedcubing, Tutorials, Videos, Personal Records, Competitions, Podcast" />
-  <meta name="author" content="Oscarwsh | Oscar Cederberg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="images/Oscarwsh-Icon.png" />
+    <meta name="description"
+        content="Learn more about Oscarwsh, a Swedish/Canadian speedcuber. Find out about his personal records, journey, and more!" />
+    <meta name="keywords"
+        content="Oscarwsh, Cubing, Rubik's Cube, Speedcubing, Tutorials, Videos, Personal Records, Competitions, Podcast" />
+    <meta name="author" content="Oscarwsh | Oscar Cederberg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
+
 <body>
 
-  <!-- Responsive / Accessible Nav -->
-  <nav class="site-nav" aria-label="Primary">
-    <a class="brand" href="index.html">Oscarwsh</a>
-    <button class="nav-toggle" aria-expanded="false" aria-controls="primary-menu" aria-label="Toggle menu">
-      <span class="bar"></span><span class="bar"></span><span class="bar"></span>
-    </button>
-    <div id="primary-menu" class="menu">
-      <a href="index.html">Home</a>
-      <a href="about.html" aria-current="page">About Me</a>
-      <a href="cubing.html">Cubing</a>
-      <a href="youtube.html">YouTube</a>
-      <a href="podcast.html">Podcast</a>
+    <!-- Responsive / Accessible Nav -->
+    <nav class="site-nav" aria-label="Primary">
+        <div class="brand-container">
+            <a class="brand" href="index.html"><img src="images/Oscarwsh-Icon.png" alt="Oscarwsh Icon">Oscarwsh</a>
+        </div>
+        <div class="links">
+            <div id="primary-menu" class="menu">
+                <a href="index.html">Home</a>
+                <a href="about.html" id="current-page">About Me</a>
+                <div class="dropdown"><a href="cubing.html" aria-current="page">Cubing</a>
+                    <div class="dropdown-content">
+                        <div class="dropdown-3x3"><a href="3x3.html">3x3 Cube</a>
+                            <div class="dropdown-3x3-content">
+                                <a href="beginner-3x3.html">Beginner's Method</a>
+                                <div class="cfop-dropdown"><a href="cfop.html">CFOP Method</a>
+                                    <div class="cfop-dropdown-content">
+                                        <a href="2look-oll.html">2Look OLL</a>
+                                        <a href="2look-pll.html">2Look PLL</a>
+                                        <a href="cfop-oll.html">CFOP OLL</a>
+                                        <a href="cfop-pll.html">CFOP PLL</a>
+                                        <a href="cfop-f2l.html">CFOP F2L</a>
+                                        <a href="cross.html">Advanced Cross</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="4x4.html">4x4 Cube</a>
+                    </div>
+                </div>
+                <a href="youtube.html">YouTube</a>
+                <a href="podcast.html">Podcast</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header id="title">
+        <h1>About Me</h1>
+    </header>
+
+    <hr class="divider" />
+
+    <!-- Who am I -->
+    <section id="Basic">
+        <h4><b><u>Who am I?</u></b></h4>
+        <p>
+            Hello! My name is Oscar and I'm a Swedish👑/Canadian🍁 speedcuber.
+            I make videos about speedcubing. I love to share my knowledge and
+            experiences with others!<br /><br />
+            Apart from cubing, I enjoy gaming, Ice Hockey,
+            Skiing, Formula 1 and music. My favourite music genres are Pop and Rock
+            and my favourite artists include Olivia Rodrigo Bon Jovi, Kiss, and AC/DC.
+        </p>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- Personal Records -->
+    <section id="pr-section">
+        <h4><b><u>Personal Records</u></b></h4>
+
+        <!-- (Kept your original table as-is) -->
+        <table>
+            <tr>
+                <th>Competition</th>
+                <th>Date</th>
+                <th>Single</th>
+                <th>Event</th>
+                <th>Average</th>
+                <th>Date</th>
+                <th>Competition</th>
+            </tr>
+
+            <tr>
+                <td><a href="https://www.worldcubeassociation.org/competitions/Gotalandsmasterskapet2025"
+                        target="_blank">Götalandsmästerskapet 2025</a></td>
+                <td>2025-12-14</td>
+                <td>3.11s</td>
+                <td>2x2</td>
+                <td>4.96s</td>
+                <td>2025-10-26</td>
+                <td><a href="https://www.worldcubeassociation.org/competitions/CubossOpen2025" target="_blank">Cuboss
+                        Open 2025</a></td>
+            </tr>
+
+            <tr>
+                <td><a href="https://www.worldcubeassociation.org/competitions/StockholmsliganNyoka2025"
+                        target="_blank">Stockholmsligan Sita - Nyoka 2025</a></td>
+                <td>2025-11-20</td>
+                <td>14.37s</td>
+                <td>3x3</td>
+                <td>16.26s</td>
+                <td>2025-10-27</td>
+                <td><a href="https://www.worldcubeassociation.org/competitions/KublordagUppsalaII2025"
+                        target="_blank">Kublördag Uppsala II - 2025</a></td>
+            </tr>
+
+            <tr>
+                <td><a href="https://www.worldcubeassociation.org/competitions/KublordagUppsalaIV2026"
+                        target="_blank">Kublördag Uppsala IV - 2026</a></td>
+                <td>2026-02-21</td>
+                <td>1:07.49</td>
+                <td>4x4</td>
+                <td>1:27.58</td>
+                <td>2025-11-15</td>
+                <td><a href="https://www.worldcubeassociation.org/competitions/KublordagUppsalaIII2025"
+                        target="_blank">Kublördag Uppsala III - 2025</a></td>
+            </tr>
+
+            <tr>
+                <td><a href="https://www.worldcubeassociation.org/competitions/KublordagUppsalaIV2026"
+                        target="_blank">Kublördag Uppsala IV - 2026</a></td>
+                <td>2026-02-21</td>
+                <td>2:47.21</td>
+                <td>5x5</td>
+                <td>2:34.69</td>
+                <td>2026-02-21</td>
+                <td><a href="https://www.worldcubeassociation.org/competitions/KublordagUppsalaIV2026"
+                        target="_blank">Kublördag Uppsala IV - 2026</a></td>
+            </tr>
+
+            <tr>
+                <td><a href="https://www.worldcubeassociation.org/competitions/KublordagUppsalaIV2026"
+                        target="_blank">Kublördag Uppsala IV - 2026</a></td>
+                <td>2026-02-21</td>
+                <td>7:03.14</td>
+                <td>6x6</td>
+                <td>N/A</td>
+                <td>N/A</td>
+                <td><a href="https://www.worldcubeassociation.org/competitions/" target="_blank">N/A</a></td>
+            </tr>
+
+            <tr>
+                <td><a href="https://www.worldcubeassociation.org/competitions/" target="_blank">N/A</a></td>
+                <td>N/A</td>
+                <td>N/A</td>
+                <td>7x7</td>
+                <td>N/A</td>
+                <td>N/A</td>
+                <td><a href="https://www.worldcubeassociation.org/competitions/" target="_blank">N/A</a></td>
+            </tr>
+
+            <tr>
+                <td><a href="https://www.worldcubeassociation.org/competitions/UppsalaChristmasSpecial2025"
+                        target="_blank">Uppsala Christmas Special 2025</a></td>
+                <td>2025-12-20</td>
+                <td>2:50.10</td>
+                <td>3BLD</td>
+                <td>N/A</td>
+                <td>N/A</td>
+                <td><a href="https://www.worldcubeassociation.org/competitions/" target="_blank">N/A</a></td>
+            </tr>
+
+            <tr>
+                <td><a href="https://www.worldcubeassociation.org/competitions/FMCUndertheMistletoe2025"
+                        target="_blank">FMC under the Mistletoe 2025</a></td>
+                <td>2025-12-20</td>
+                <td>73</td>
+                <td>FMC</td>
+                <td>N/A</td>
+                <td>N/A</td>
+                <td><a href="https://www.worldcubeassociation.org/competitions/" target="_blank">N/A</a></td>
+            </tr>
+
+            <tr>
+                <td><a href="https://www.worldcubeassociation.org/competitions/EkeroOpen2026" target="_blank">Ekerö Open
+                        2026</a></td>
+                <td>2026-01-31</td>
+                <td>25.89</td>
+                <td>OH</td>
+                <td>33.39</td>
+                <td>2025-10-26</td>
+                <td><a href="https://www.worldcubeassociation.org/competitions/CubossOpen2025" target="_blank">Cuboss
+                        Open 2025</a></td>
+            </tr>
+
+            <tr>
+                <td><a href="https://www.worldcubeassociation.org/competitions/akerskuba2026" target="_blank">ÅkersKuba
+                        2026</a></td>
+                <td>2026-02-07</td>
+                <td>15.74</td>
+                <td>Clock</td>
+                <td>18.02</td>
+                <td>2026-02-07</td>
+                <td><a href="https://www.worldcubeassociation.org/competitions/akerskuba2026" target="_blank">Åkerskuba
+                        2026</a></td>
+            </tr>
+
+            <tr>
+                <td><a href="https://www.worldcubeassociation.org/competitions/KublordagUppsalaI2025"
+                        target="_blank">Kublördag Uppsala I - 2025</a></td>
+                <td>2025-7-19</td>
+                <td>4:59.15</td>
+                <td>Mega</td>
+                <td>N/A</td>
+                <td>N/A</td>
+                <td><a href="https://www.worldcubeassociation.org/competitions/" target="_blank">N/A</a></td>
+            </tr>
+
+            <tr>
+                <td><a href="https://www.worldcubeassociation.org/competitions/KublordagUppsalaII2025"
+                        target="_blank">Kublördag Uppsala II - 2025</a></td>
+                <td>2025-10-27</td>
+                <td>5.67</td>
+                <td>Pyra</td>
+                <td>13.71</td>
+                <td>2025-12-13</td>
+                <td><a href="https://www.worldcubeassociation.org/competitions/Gotalandsmastareskapet2025"
+                        target="_blank">Götalandsmästerskapet 2025</a></td>
+            </tr>
+
+            <tr>
+                <td><a href="https://www.worldcubeassociation.org/competitions/KublordagUppsalaIII2025"
+                        target="_blank">Kublördag Uppsala III - 2025</a></td>
+                <td>2025-11-15</td>
+                <td>7.65</td>
+                <td>Skewb</td>
+                <td>12.42</td>
+                <td>2026-01-31</td>
+                <td><a href="https://www.worldcubeassociation.org/competitions/akerskuba2026" target="_blank">ÅkersKuba
+                        2026</a></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.worldcubeassociation.org/competitions/akerskuba2026" target="_blank">ÅkersKuba
+                        2026</a></td>
+                <td>2026-02-07</td>
+                <td>38.09</td>
+                <td>SQ-1</td>
+                <td>1:06.93</td>
+                <td>2026-02-07</td>
+                <td><a href="https://www.worldcubeassociation.org/competitions/akerskuba2026" target="_blank">ÅkersKuba
+                        2026</a></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.worldcubeassociation.org/competitions/" target="_blank">N/A</a></td>
+                <td>N/A</td>
+                <td>N/A</td>
+                <td>4BLD</td>
+                <td>N/A</td>
+                <td>N/A</td>
+                <td><a href="https://www.worldcubeassociation.org/competitions/" target="_blank">N/A</a></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.worldcubeassociation.org/competitions/" target="_blank">N/A</a></td>
+                <td>N/A</td>
+                <td>N/A</td>
+                <td>5BLD</td>
+                <td>N/A</td>
+                <td>N/A</td>
+                <td><a href="https://www.worldcubeassociation.org/competitions/" target="_blank">N/A</a></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.worldcubeassociation.org/competitions/" target="_blank">N/A</a></td>
+                <td>N/A</td>
+                <td>N/A</td>
+                <td>MBLD</td>
+                <td>N/A</td>
+                <td>N/A</td>
+                <td><a href="https://www.worldcubeassociation.org/competitions/" target="_blank">N/A</a></td>
+            </tr>
+        </table>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- Journey -->
+    <section id="journey-section">
+        <h4><b><u>My Cubing Journey</u></b></h4>
+        <p>
+            I started speedcubing in 2023 and have been improving ever since.
+            I learned to solve the Rubik's Cube from Jperms amazing
+            beginner tutorial. After one afternoon of tutorials and practice,
+            I was able to solve the cube in around 2 minutes.
+            <br /><br />
+            After that, It took me around 2 weeks until I was able to solve the cube in
+            under 1 minute and around 2 month until I was able to solve it in under 30 seconds.
+            <br /><br />
+            That's when I started to learn 2 Look CFOP. It started with 2 Look OLL and PLL.
+            F2L was probably the hardest for me to learn. At the start I did Layer by Layer
+            followed by 4 Look Last Layer but eventually I
+            <br /><br />
+            <br /><br />
+            It took my a while to start competing, but I finally did at the Swedish Championship
+            2025 and have been competing ever since.
+            I love the community and the people I've met through cubing and I'm excited to see where
+        </p>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- Footer -->
+    <footer class="site-footer" role="contentinfo">
+        <div class="footer-column">
+            <h4>About</h4>
+            <a href="index.html"><span class="icon">🏠</span> Home</a>
+            <a href="about.html"><span class="icon">👤</span> About Me</a>
+        </div>
+
+        <div class="footer-column">
+            <h4>Socials</h4>
+            <a href="https://youtube.com/@oscarwsh?sub_confrimation=1" target="_blank">
+                <span id="icon"><img src="images/Youtube-Icon.png" alt="YouTube"></span> YouTube
+            </a>
+            <a href="https://open.spotify.com/show/1R1fgF8S2SaYGap3GMRdHj" target="_blank">
+                <span id="icon"><img src="images/Spotify-Icon.png" alt="Spotify Podcast"></span> Podcast
+            </a>
+        </div>
+
+        <div class="footer-column">
+            <h4>Support</h4>
+            <a href="https://boya.pxf.io/oscarwsh" target="_blank">
+                <span id="boya-icon"><img src="images/Boya-Icon.png" alt="Boya Affiliate"></span> Affiliate
+            </a>
+        </div>
+    </footer>
+
+    <div class="footer-bottom">
+        © 2026 Oscarwsh™. All rights reserved. Oscarwsh™ and +2 Podcast™ are trademarks of Oscarwsh™.
+        This website is not affiliated with the World Cube Association or any other organization.
+        All content is created by Oscarwsh™.
     </div>
-  </nav>
 
-  <!-- Hero -->
-  <header id="title">
-    <h1>About Me</h1>
-  </header>
-
-  <hr class="divider" />
-
-  <!-- Who am I -->
-  <section id="Basic">
-    <h4><b><u>Who am I?</u></b></h4>
-    <p>
-      Hello! My name is Oscar and I'm a Swedish👑/Canadian🍁 speedcuber.
-      I make videos about speedcubing. I love to share my knowledge and
-      experiences with others!<br /><br />
-      Apart from cubing, I enjoy gaming, Ice Hockey,
-      Skiing, Formula 1 and music. My favourite music genres are Pop and Rock
-      and my favourite artists include Olivia Rodrigo Bon Jovi, Kiss, and AC/DC.
-    </p>
-  </section>
-
-  <hr class="divider" />
-
-  <!-- Personal Records -->
-  <section id="pr-section">
-    <h4><b><u>Personal Records</u></b></h4>
-
-    <!-- (Kept your original table as-is) -->
-    <table>
-      <tr>
-        <th>Competition</th>
-        <th>Date</th>
-        <th>Single</th>
-        <th>Event</th>
-        <th>Average</th>
-        <th>Date</th>
-        <th>Competition</th>
-      </tr>
-
-      <tr>
-        <td><a href="https://www.worldcubeassociation.org/competitions/StockholmsliganNyoka2025" target="_blank">Stockholmsligan Sita - Nyoka 2025</a></td>
-        <td>2025-11-20</td>
-        <td>14.37s</td>
-        <td>3x3</td>
-        <td>16.26s</td>
-        <td>2025-10-27</td>
-        <td><a href="https://www.worldcubeassociation.org/competitions/KublordagUppsalaII2025" target="_blank">Kublördag Uppsala II - 2025</a></td>
-      </tr>
-
-      <tr>
-        <td><a href="https://www.worldcubeassociation.org/competitions/Gotalandsmasterskapet2025" target="_blank">Götalandsmästerskapet 2025</a></td>
-        <td>2025-12-14</td>
-        <td>3.11s</td>
-        <td>2x2</td>
-        <td>4.96s</td>
-        <td>2025-10-26</td>
-        <td><a href="https://www.worldcubeassociation.org/competitions/CubossOpen2025" target="_blank">Cuboss Open 2025</a></td>
-      </tr>
-
-      <tr>
-        <td><a href="https://www.worldcubeassociation.org/competitions/AkersKuba2026" target="_blank">ÅkersKuba 2026</a></td>
-        <td>2026-02-07</td>
-        <td>1:12.98</td>
-        <td>4x4</td>
-        <td>1:27.58</td>
-        <td>2025-11-15</td>
-        <td><a href="https://www.worldcubeassociation.org/competitions/KublordagUppsalaIII2025" target="_blank">Kublördag Uppsala III - 2025</a></td>
-      </tr>
-
-      <tr>
-        <td><a href="https://www.worldcubeassociation.org/competitions/KublordagUppsalaIII2025" target="_blank">Kublördag Uppsala III - 2025</a></td>
-        <td>2025-11-15</td>
-        <td>1:12.98</td>
-        <td>5x5</td>
-        <td>1:27.58</td>
-        <td>2025-11-15</td>
-        <td><a href="https://www.worldcubeassociation.org/competitions/KublordagUppsalaIII2025" target="_blank">Kublördag Uppsala III - 2025</a></td>
-      </tr>
-
-      <tr>
-        <td><a href="https://www.worldcubeassociation.org/competitions/" target="_blank">N/A</a></td>
-        <td>N/A</td>
-        <td>N/A</td>
-        <td>6x6</td>
-        <td>N/A</td>
-        <td>N/A</td>
-        <td><a href="https://www.worldcubeassociation.org/competitions/" target="_blank">N/A</a></td>
-      </tr>
-
-      <tr>
-        <td><a href="https://www.worldcubeassociation.org/competitions/" target="_blank">N/A</a></td>
-        <td>N/A</td>
-        <td>N/A</td>
-        <td>7x7</td>
-        <td>N/A</td>
-        <td>N/A</td>
-        <td><a href="https://www.worldcubeassociation.org/competitions/" target="_blank">N/A</a></td>
-      </tr>
-
-      <tr>
-        <td><a href="https://www.worldcubeassociation.org/competitions/UppsalaChristmasSpecial2025" target="_blank">Uppsala Christmas Special 2025</a></td>
-        <td>2025-12-20</td>
-        <td>2:50.10</td>
-        <td>3BLD</td>
-        <td>N/A</td>
-        <td>N/A</td>
-        <td><a href="https://www.worldcubeassociation.org/competitions/" target="_blank">N/A</a></td>
-      </tr>
-
-      <tr>
-        <td><a href="https://www.worldcubeassociation.org/competitions/FMCUndertheMistletoe2025" target="_blank">FMC under the Mistletoe 2025</a></td>
-        <td>2025-12-20</td>
-        <td>73</td>
-        <td>FMC</td>
-        <td>N/A</td>
-        <td>N/A</td>
-        <td><a href="https://www.worldcubeassociation.org/competitions/" target="_blank">N/A</a></td>
-      </tr>
-
-      <tr>
-        <td><a href="https://www.worldcubeassociation.org/competitions/EkeroOpen2026" target="_blank">Ekerö Open 2026</a></td>
-        <td>2026-01-31</td>
-        <td>25.89</td>
-        <td>OH</td>
-        <td>33.39</td>
-        <td>2025-10-26</td>
-        <td><a href="https://www.worldcubeassociation.org/competitions/CubossOpen2025" target="_blank">Cuboss Open 2025</a></td>
-      </tr>
-
-      <tr>
-        <td><a href="https://www.worldcubeassociation.org/competitions/akerskuba2026" target="_blank">ÅkersKuba 2026</a></td>
-        <td>2026-02-07</td>
-        <td>15.74</td>
-        <td>Clock</td>
-        <td>18.02</td>
-        <td>2026-02-07</td>
-        <td><a href="https://www.worldcubeassociation.org/competitions/akerskuba2026" target="_blank">Åkerskuba 2026</a></td>
-      </tr>
-
-      <tr>
-        <td><a href="https://www.worldcubeassociation.org/competitions/KublordagUppsalaI2025" target="_blank">Kublördag Uppsala I - 2025</a></td>
-        <td>2025-7-19</td>
-        <td>4:59.15</td>
-        <td>Mega</td>
-        <td>N/A</td>
-        <td>N/A</td>
-        <td><a href="https://www.worldcubeassociation.org/competitions/" target="_blank">N/A</a></td>
-      </tr>
-
-      <tr>
-        <td><a href="https://www.worldcubeassociation.org/competitions/KublordagUppsalaII2025" target="_blank">Kublördag Uppsala II - 2025</a></td>
-        <td>2025-10-27</td>
-        <td>5.67</td>
-        <td>Pyra</td>
-        <td>13.71</td>
-        <td>2025-12-13</td>
-        <td><a href="https://www.worldcubeassociation.org/competitions/Gotalandsmastareskapet2025" target="_blank">Götalandsmästerskapet 2025</a></td>
-      </tr>
-    </table>
-  </section>
-
-  <hr class="divider" />
-
-  <!-- Journey -->
-  <section id="journey-section">
-    <h4><b><u>My Cubing Journey</u></b></h4>
-    <p>
-      I started speedcubing in 2023 and have been improving ever since.
-      I learned to solve the Rubik's Cube from Jperms amazing
-      beginner tutorial. After one afternoon of tutorials and practice,
-      I was able to solve the cube in around 2 minutes.
-      <br /><br />
-      After that, It took me around 2 weeks until I was able to solve the cube in
-      under 1 minute and around 2 month until I was able to solve it in under 30 seconds.
-      <br /><br />
-      That's when I started to learn 2 Look CFOP. It started with 2 Look OLL and PLL.
-      F2L was probably the hardest for me to learn. At the start I did Layer by Layer
-      followed by 4 Look Last Layer but eventually I
-      <br /><br />
-      <br /><br />
-      It took my a while to start competing, but I finally did at the Swedish Championship
-      2025 and have been competing ever since.
-      I love the community and the people I've met through cubing and I'm excited to see where
-    </p>
-  </section>
-
-  <hr class="divider" />
-
-  <!-- Footer -->
-  <footer class="site-footer" role="contentinfo">
-    <div class="footer-column">
-      <h4>About</h4>
-      <a href="index.html"><span class="icon">🏠</span> Home</a>
-      <a href="about.html"><span class="icon">👤</span> About Me</a>
-    </div>
-
-    <div class="footer-column">
-      <h4>Socials</h4>
-      <a href="https://youtube.com/@oscarwsh?sub_confrimation=1" target="_blank">
-        <span id="icon"><img src="images/Youtube-Icon.png" alt="YouTube"></span> YouTube
-      </a>
-      <a href="https://open.spotify.com/show/1R1fgF8S2SaYGap3GMRdHj" target="_blank">
-        <span id="icon"><img src="images/Spotify-Icon.png" alt="Spotify Podcast"></span> Podcast
-      </a>
-    </div>
-
-    <div class="footer-column">
-      <h4>Support</h4>
-      <a href="https://boya.pxf.io/oscarwsh" target="_blank">
-        <span id="boya-icon"><img src="images/Boya-Icon.png" alt="Boya Affiliate"></span> Affiliate
-      </a>
-    </div>
-  </footer>
-
-  <div class="footer-bottom">
-    © 2026 Oscarwsh™. All rights reserved. Oscarwsh™ and +2 Podcast™ are trademarks of Oscarwsh™.
-    This website is not affiliated with the World Cube Association or any other organization.
-    All content is created by Oscarwsh™.
-  </div>
-
-<script src="nav.js" defer></script>
+    <script src="nav.js" defer></script>
 </body>
+
 </html>
