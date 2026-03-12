@@ -5,7 +5,8 @@ const EPISODES = [
     "https://open.spotify.com/episode/79CaqQBI5lf2UDAgos8sAh?si=BOUCFLcBT7Kc4Qcvuzf2Xg",
     "https://open.spotify.com/episode/6Do6mlndjDcwQgcDu6338h?si=ArvOZT2ETiGWQXH3EigmXg",
     "https://open.spotify.com/episode/1JB9ivsNimSci1cSzpYw63?si=vN6WhO3LR-q6alwHP6GvKg",
-    "https://open.spotify.com/episode/3V9gpnBYqOsoGalte7OJJc?si=6JSp_0egRYe-6DlgQoawcw"
+    "https://open.spotify.com/episode/3V9gpnBYqOsoGalte7OJJc?si=6JSp_0egRYe-6DlgQoawcw",
+    "https://open.spotify.com/episode/7oawpAszvD3COq1DzkJCMJ?si=lZOhEoLjTLS1Hu9nj1JCTg",
 ];
 
 // ======= DO NOT EDIT BELOW THIS LINE =======
