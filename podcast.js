@@ -8,6 +8,7 @@ const EPISODES = [
     "https://open.spotify.com/episode/3V9gpnBYqOsoGalte7OJJc?si=6JSp_0egRYe-6DlgQoawcw",
     "https://open.spotify.com/episode/7oawpAszvD3COq1DzkJCMJ?si=lZOhEoLjTLS1Hu9nj1JCTg",
     "https://open.spotify.com/episode/17dxkU9jCFQSEUlds3Ka0C?si=RCh7xPgzRhGEmp0foTUTvQ",
+    "https://open.spotify.com/episode/0n7YwwqznpfANClkiRnunr?si=0Xx0WxYrSLO0O3L5ykekvg",
 ];
 
 // ======= DO NOT EDIT BELOW THIS LINE =======
