@@ -1,7 +1,7 @@
 /* Container */
 #podcast-platforms {
   display: flex;
-  flex-wrap: wrap;             /* allows wrapping on small screens */
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   gap: clamp(16px, 5vw, 32px);
@@ -13,7 +13,7 @@
   height: auto;
   border-radius: 12px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  display: block;              /* removes descender gaps */
+  display: block;
 }
 
 /* Hover & keyboard focus for accessibility */
@@ -28,7 +28,7 @@
 .podcast-platforms a:focus-visible {
   outline: 3px solid rgba(200, 100, 255, 0.6);
   outline-offset: 6px;
-  border-radius: 14px; /* align with img rounding */
+  border-radius: 14px;
 }
 
 /* Respect reduced-motion user preference */
@@ -42,8 +42,6 @@
     box-shadow: none;
   }
 }
-
-
 
 /* ---- PODCAST SECTION ---- */
 #podcast-section {
@@ -64,8 +62,8 @@
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
-  padding: clamp(6px,1.5vw,12px) clamp(24px,6vw,80px); /* room for arrows */
-  scrollbar-width: none; /* Firefox */
+  padding: clamp(6px,1.5vw,12px) clamp(24px,6vw,80px);
+  scrollbar-width: none;
 }
 .podcast-carousel::-webkit-scrollbar { display: none; }
 
