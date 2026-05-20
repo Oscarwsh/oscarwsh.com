@@ -9,6 +9,9 @@ const EPISODES = [
     "https://open.spotify.com/episode/17dxkU9jCFQSEUlds3Ka0C?si=RCh7xPgzRhGEmp0foTUTvQ",
     "https://open.spotify.com/episode/0n7YwwqznpfANClkiRnunr?si=0Xx0WxYrSLO0O3L5ykekvg",
     "https://open.spotify.com/episode/1bLTGVAxudnxVLcyFwJbMq?si=cs5AJAceQwCfOMT4aoQ4rA",
+    "https://open.spotify.com/episode/7wuc3SJbh5LLvUpK56pEFU?si=sucX0ZN-T8iliOFIu1VyHA",
+    "https://open.spotify.com/episode/1nQIcv1UoAgUdN87Yw4kGS?si=zz-pWmGCSU-SGGw8gxrBnQ",
+    "https://open.spotify.com/episode/65XZVz0pKijUB6EOW9HSnM?si=Dz4spTrhRsSf-AEnJBAE6A",
 ];
 
 // ======= HELPER FUNCTION =======

@@ -358,3 +358,9 @@ hr.divider {
 /* ICON SIZES */
 #icon img { width: 7%; }
 #boya-icon img { width: 15%; }
+
+.current-page {
+    color: #00bfff;
+    font-weight: bold;
+    border-bottom: 2px solid #00bfff;
+}
