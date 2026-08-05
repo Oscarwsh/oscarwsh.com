@@ -42,10 +42,6 @@ img, video { max-width: 100%; height: auto; }
 /* ============================================================
    NAVIGATION — BRAND LEFT + MENU TRUE CENTER
 ============================================================ */
-#current-page {
-    color: #b366ff;
-    font-weight: bold;
-}
 
 nav.site-nav {
   background: #000;
@@ -313,7 +309,7 @@ hr.divider {
 ============================================================ */
 .site-footer {
   background: #0f0f0f;
-  padding: 60px 20px;
+  padding: 30px 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -360,7 +356,10 @@ hr.divider {
 #boya-icon img { width: 15%; }
 
 .current-page {
-    color: #00bfff;
+    color: #b366ff !important;
     font-weight: bold;
-    border-bottom: 2px solid #00bfff;
+}
+
+.menu a.current-page::after {
+    width: 100%;
 }
