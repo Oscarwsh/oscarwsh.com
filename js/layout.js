@@ -1,42 +1,18 @@
-async function loadComponent(id, file) {
-    const response = await fetch(file);
-    const data = await response.text();
+function initializeNav() {
+    const nav = document.querySelector(".site-nav");
+    const btn = nav?.querySelector(".nav-toggle");
 
-    document.getElementById(id).innerHTML = data;
+    if (!nav || !btn) return;
 
-    // AFTER nav loads
-    if (id === "nav-placeholder") {
+    btn.addEventListener("click", () => {
+        const isOpen = nav.classList.toggle("open");
+        btn.setAttribute("aria-expanded", isOpen);
+    });
 
-        highlightCurrentPage();
-
-        // Re-run nav functionality
-        if (typeof initializeNav === "function") {
-            initializeNav();
+    document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") {
+            nav.classList.remove("open");
+            btn.setAttribute("aria-expanded", "false");
         }
-    }
-}
-
-function highlightCurrentPage() {
-
-    let currentPage = window.location.pathname.split("/").pop();
-
-    // Default homepage
-    if (currentPage === "") {
-        currentPage = "index.html";
-    }
-
-    const navLinks = document.querySelectorAll(".menu a");
-
-    navLinks.forEach(link => {
-
-        const linkPage = link.getAttribute("href");
-
-        if (linkPage === currentPage) {
-            link.classList.add("current-page");
-        }
-
     });
 }
-
-loadComponent("nav-placeholder", "nav.html");
-loadComponent("footer-placeholder", "footer.html");
